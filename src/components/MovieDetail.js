@@ -1,10 +1,13 @@
 import React from 'react';
 import { Image } from 'react-native';
-import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
+import { Container, Content, Card, CardItem, Thumbnail, Text, Button, Left, Body } from 'native-base';
 
+//movie info passed to child component as prop => movieInfo
 const MovieDetail = ({ movieInfo }) => {
+    //de structure the prop based on the keys found in the console log
 	const { poster_path, title, overview, vote_average, backdrop_path, release_date } = movieInfo;
     return (
+        //JSX pulled from native base docs
             <Container style={{ marginBottom: -100 }}>
                 <Content>
                     <Card>
